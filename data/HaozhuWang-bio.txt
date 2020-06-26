@@ -1,0 +1,1 @@
+Haozhu Wang is a Ph.D. student at University of Michigan. His research focus is machine learning methods for scientific applications. He is interested in reinforcement learning, computer vision, and optimization.
