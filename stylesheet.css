@@ -130,3 +130,35 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+/* Social Media Icons */
+.social-icon {
+  display: inline-block;
+  font-size: 24px;
+  color: #1772d0;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin: 0 8px;
+}
+
+.social-icon:hover {
+  color: #f09228;
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+.social-icon i {
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover i {
+  transform: scale(1.1);
+}
+
+/* Responsive design for social icons */
+@media (max-width: 600px) {
+  .social-icon {
+    font-size: 20px;
+    margin: 0 6px;
+  }
+}
