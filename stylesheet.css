@@ -48,6 +48,7 @@
 /* Base styles */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -59,6 +60,8 @@ body {
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  word-wrap: break-word;
 }
 
 /* Modern container */
@@ -340,6 +343,37 @@ span.highlight {
     padding: 1.5rem;
   }
   
+  /* Mobile-specific publication card layout */
+  .publication-card > div {
+    flex-direction: column !important;
+    gap: 1rem !important;
+  }
+  
+  .publication-card > div > div:first-child {
+    flex: none !important;
+    width: 100% !important;
+    text-align: center;
+  }
+  
+  .publication-card > div > div:first-child img {
+    max-width: 200px !important;
+    width: auto !important;
+  }
+  
+  .publication-card > div > div:last-child {
+    flex: 1 !important;
+  }
+  
+  /* Mobile header adjustments */
+  .header-section > div {
+    flex-direction: column !important;
+    text-align: center;
+  }
+  
+  .header-section > div > div:first-child {
+    margin-bottom: 1rem;
+  }
+  
   table {
     font-size: 0.9rem;
   }
@@ -366,6 +400,29 @@ span.highlight {
   
   heading {
     font-size: 1.5rem;
+  }
+  
+  .publication-card {
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+  
+  /* Extra small screens - stack everything vertically */
+  .publication-card > div > div:first-child img {
+    max-width: 150px !important;
+  }
+  
+  /* Make buttons stack vertically on very small screens */
+  .publication-card a {
+    display: block !important;
+    margin-bottom: 0.5rem !important;
+    text-align: center;
+  }
+  
+  /* Adjust tag sizes for mobile */
+  .publication-card span[style*="padding: 0.375rem 0.75rem"] {
+    padding: 0.25rem 0.5rem !important;
+    font-size: 0.7rem !important;
   }
 }
 
